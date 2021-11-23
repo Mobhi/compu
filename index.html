@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de musica</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container bg-principal">
+        <div class="card">
+            <div class="row card-header">
+                <div class="col-2">
+                    <h3 class="logo"><i class="fas fa-music"></i></h3>
+                </div>
+                <div class="col-2 carga">
+                    <label for="files" class="carga"><i class="fas fa-arrow-circle-up"></i></label>
+                    <input type="file" id="files" name="files[]" multiple/>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="card-image">
+                    <img src="https://cdn.pixabay.com/photo/2020/07/14/11/22/graphic-5403808_960_720.png" alt="">
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-2">
+                        <h3 class="text-secundario">Nombre:</h3>
+                    </div>
+                    <div class="col-2">
+                        <h4 class="texto-texto" id="name-music">Nombre
+                            Cancion</h4>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <h2 class="control atras">
+                                <i class="fas fa-fast-backward"></i>
+                            </h2>
+                        </div>
+                        <div class="col-4">
+                            <h2 class="control play">
+                                <i class="far fa-play-circle"></i>
+                            </h2>
+                        </div>
+                        <div class="col-4">
+                            <h2 class="control pause">
+                               <i class="far fa-pause-circle"></i> 
+                            </h2>
+                        </div>
+                        <div class="col-4">
+                            <h2 class="control adelante">
+                                </i><i class="fas fa-fast-forward"></i>
+                            </h2>
+                        </div>
+                        <div id="musica-temporal"></div>
+                    </div>
+                    <h4 class="text-secundario">Lista de musicas</h4>
+                    <div class="row">
+                        <ul id="lista-musica">
+                            <li class="List-item" id="music">Musica</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>
